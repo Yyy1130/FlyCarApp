@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyCarApp.Page.CarBook" NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Image/bookpage.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5.5*"></RowDefinition>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                    <RowDefinition Height="0.6*"></RowDefinition>
+                    <RowDefinition Height="0.6*"></RowDefinition>
+                    <RowDefinition Height="0.6*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Text="预约费统统免费" FontSize="Large" TextColor="White"
+                       Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"  HorizontalOptions="Center"></Label>
+                <Label Text="车牌号:" FontSize="Large" TextColor="White"
+                       Grid.Row="2" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center"></Label>
+                <Editor x:Name="carno" Text="" FontSize="Default" TextColor="White"
+                        Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" VerticalOptions="Center"></Editor>
+                <Label Text="用户名:" FontSize="Large" TextColor="White"
+                       Grid.Row="3" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center"></Label>
+                <Editor x:Name="username" Text="" FontSize="Default" TextColor="White"
+                        Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" VerticalOptions="Center"></Editor>
+                <Label Text="目的地编号:" FontSize="Large" TextColor="White"
+                       Grid.Row="4" Grid.Column="0" HorizontalOptions="End" Grid.ColumnSpan="2" VerticalOptions="Center"></Label>
+                <Picker x:Name="target" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" VerticalOptions="Center" TextColor="White">
+                </Picker>
+                <Button Text="预约飞的" FontSize="Default" TextColor="White" CornerRadius="15" BorderColor="White" BorderWidth="2" BackgroundColor="ForestGreen"
+                        Grid.Row="5" Grid.Column="3" Clicked="Book_ClickedAsync"></Button>
+                <Button Text="取消预约" FontSize="Default" TextColor="White" CornerRadius="15" BorderColor="White" BorderWidth="2" BackgroundColor="ForestGreen"
+                        Grid.Row="5" Grid.Column="2" Clicked="Cancel_ClickedAsync"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

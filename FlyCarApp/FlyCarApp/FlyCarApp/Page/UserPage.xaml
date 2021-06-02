@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyCarApp.Page.UserPage" NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Image/userpage.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="End" VerticalOptions="Center"
+                    Text="用户名：" FontSize="Large" TextColor="Black" FontAttributes="Bold"></Label>
+                <Label Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center"
+                    x:Name="name" Text="" FontSize="Large" TextColor="Black" FontAttributes="Bold"></Label>
+                <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="End" VerticalOptions="Center"
+                    Text="用户Vip等级：" FontSize="Large" TextColor="Black" FontAttributes="Bold"></Label>
+                <Label Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center"
+                    x:Name="vip" Text="" FontSize="Large" TextColor="Black" FontAttributes="Bold"></Label>
+                <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="End" VerticalOptions="Center"
+                    Text="用户手机号：" FontSize="Large" TextColor="Black" FontAttributes="Bold"></Label>
+                <Label Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center"
+                    x:Name="phone" Text="" FontSize="Large" TextColor="Black" FontAttributes="Bold"></Label>
+                <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="6" 
+                    ImageSource="Iamge/recharge.png" BackgroundColor="ForestGreen" BorderColor="White" BorderWidth="3"
+                    x:Name="recharge" Text="用户充值" FontSize="Large" FontAttributes="Bold" TextColor="White" Clicked="recharge_ClickedAsync"></Button>
+                <Button Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="6"  
+                    ImageSource="Iamge/change.png" BackgroundColor="OrangeRed" BorderColor="White" BorderWidth="3"
+                    x:Name="change" Text="注销用户" FontSize="Large" FontAttributes="Bold" TextColor="White" Clicked="change_ClickedAsync"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

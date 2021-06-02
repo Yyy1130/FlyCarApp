@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyCarApp.Page.Regist"  NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Image/registpage.jpg">
+    <ContentPage.Content>
+        <StackLayout  Margin="20">
+            <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="用户名：" Grid.Row="0" FontSize="20" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" FontAttributes="Bold" TextColor="AliceBlue"></Label>
+                <Editor x:Name="username" Placeholder="请输入用户名" HorizontalOptions="Fill"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="" FontAttributes="Bold" TextColor="AliceBlue"></Editor>
+                <Label Text="手机号：" Grid.Row="1" FontSize="20" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" FontAttributes="Bold" TextColor="AliceBlue"></Label>
+                <Editor x:Name="phone" Placeholder="请输入手机号" HorizontalOptions="Fill"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="" Keyboard="Telephone" FontAttributes="Bold" TextColor="AliceBlue"></Editor>
+                <Label Text="密码：" Grid.Row="2" FontSize="20" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" FontAttributes="Bold" TextColor="AliceBlue"></Label>
+                <Entry x:Name="password" IsPassword="True" Placeholder="请输入密码" HorizontalOptions="Fill"  Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="" FontAttributes="Bold" TextColor="AliceBlue"></Entry>
+                <Label Text="确认密码：" Grid.Row="3" FontSize="20" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" FontAttributes="Bold" TextColor="AliceBlue"></Label>
+                <Entry x:Name="checkpassword" IsPassword="True" Placeholder="请输入再次密码" HorizontalOptions="Fill"  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="" FontAttributes="Bold" TextColor="AliceBlue"></Entry>
+                <Button Text="注册" x:Name="UserRegist" Clicked="UserRegist_ClickedAsync"  Grid.Row="4" Grid.Column="1" FontAttributes="Bold" TextColor="AliceBlue" BackgroundColor="Green" BorderColor="AliceBlue" BorderWidth="2"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

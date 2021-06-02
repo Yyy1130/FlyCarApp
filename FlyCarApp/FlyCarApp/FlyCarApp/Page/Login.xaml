@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyCarApp.Page.Login" NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Image/loginpage.jpg">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End"
+                       Text="用户名:" TextColor="Green" FontSize="Large"></Label>
+                <Editor x:Name="username" Grid.Row="0" Grid.Column="1"  Placeholder="请输入用户名" HorizontalOptions="Fill" Grid.ColumnSpan="2" Text="1"></Editor>
+                <Label  Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End"
+                        Text="密码:" TextColor="Green" FontSize="Large"></Label>
+                <Entry x:Name="password" Grid.Row="1" Grid.Column="1" IsPassword="True" Placeholder="请输入密码" HorizontalOptions="Fill" Grid.ColumnSpan="2" Text="1"></Entry>
+                <Button x:Name="UserLogin" Grid.Row="2" Grid.Column="2" Clicked="UserLogin_ClickedAsync"
+                         Text="登录" TextColor="Green" FontSize="Large" BackgroundColor="PaleGreen" CornerRadius="30"></Button>
+                <Label Text="注册新用户" TextDecorations="Underline"  Grid.Row="3" Grid.Column="2" FontSize="Medium" HorizontalOptions="Center" x:Name="UserRegist">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_TappedAsync"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyCarApp.Page.VipRight"  NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Image/vippage.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" x:Name="v1" FontSize="Medium" TextColor="Gold"></Label>
+                <Label Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" x:Name="v2" FontSize="Medium" TextColor="Gold"></Label>
+                <Label Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="3" x:Name="v3" FontSize="Medium" TextColor="Gold"></Label>
+                <RadioButton Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" 
+                             x:Name="one" Text="99" VerticalOptions="Center" IsChecked="True"></RadioButton>
+                <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" FontSize="Medium" Text="$99" TextColor="Gold" HorizontalOptions="Center" VerticalOptions="Center" ></Label>
+                <RadioButton Grid.Row="2" Grid.Column="3" HorizontalOptions="Center" 
+                             x:Name="two" Text="998" VerticalOptions="Center"></RadioButton>
+                <Label Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2" FontSize="Medium" Text="$998" TextColor="Gold" HorizontalOptions="Center" VerticalOptions="Center" ></Label>
+                <RadioButton Grid.Row="2" Grid.Column="6" HorizontalOptions="Center" 
+                             x:Name="three" Text="9998" VerticalOptions="Center"></RadioButton>
+                <Label Grid.Row="2" Grid.Column="7" Grid.ColumnSpan="2" FontSize="Medium" Text="$9998" TextColor="Gold" HorizontalOptions="Center" VerticalOptions="Center" ></Label>
+                <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Text="用户名:" TextColor="Gold" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" 
+                      FontSize="Large"></Label>
+                <Editor Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="4" x:Name="username" Placeholder="请输入用户名" VerticalOptions="CenterAndExpand" Text="" TextColor="Gold"></Editor>
+                <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="5" x:Name="Vip" Text="立即开通" BackgroundColor="Chocolate" TextColor="Goldenrod" BorderColor="Goldenrod" BorderWidth="5" FontSize="Large" Clicked="Vip_Clicked" CornerRadius="100"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

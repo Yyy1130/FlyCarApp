@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:FlyCarApp.Page"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.BarItemColor="White"
+            android:TabbedPage.BarSelectedItemColor="Gold"
+            android:TabbedPage.IsSwipePagingEnabled="false"
+            x:Class="FlyCarApp.Page.MainShow" BarBackgroundColor="ForestGreen">
+    <TabbedPage.Children>
+        <local:CarParkMap Title="地图" IconImageSource="Image/parklist.png"/>
+        <NavigationPage Title="查询" IconImageSource="Image/find.png">
+            <x:Arguments>
+                <local:SelectPage/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="我的" IconImageSource="Image/userlogin.png" x:Name="mine">
+            <x:Arguments>
+                <local:Login/>
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>

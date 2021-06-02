@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyCarApp.Page.Recharge"  NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Image/rechargepage.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Source="Image/vipposter.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
+                <Image Grid.Row="1" Grid.Column="0" Source="Image/vip.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
+                <Button Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" x:Name="Right" Text="立即开通" FontSize="Large" BackgroundColor="Brown" CornerRadius="10" TextColor="Gold" Clicked="Right_ClickedAsync"></Button>
+                <Label Text="用户名：" Grid.Row="3" Grid.Column="0" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="End"></Label>
+                <Editor x:Name="username" Grid.Row="3" Grid.Column="1" FontAttributes="Bold" Placeholder="请输入用户名" HorizontalOptions="Fill" Grid.ColumnSpan="2" Text=""></Editor>
+                <Label Text="充值金额：" Grid.Row="4" Grid.Column="0" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="End"></Label>
+                <Entry x:Name="money" Grid.Row="4" Grid.Column="1" FontAttributes="Bold" Keyboard="Numeric" Placeholder="请输入金额" HorizontalOptions="Fill" Grid.ColumnSpan="2" Text="0"></Entry>
+                <Button Text="充值" Grid.Row="5" Grid.Column="1" FontAttributes="Bold" FontSize="Medium" BackgroundColor="DarkOrange" TextColor="SaddleBrown" x:Name="UserRecharge" Clicked="UserRecharge_ClickedAsync" CornerRadius="10"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

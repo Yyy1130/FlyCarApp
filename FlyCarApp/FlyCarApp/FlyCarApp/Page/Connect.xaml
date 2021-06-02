@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyCarApp.Page.Connect"  NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Margin="50">
+            <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="URL:" Grid.Row="0" FontSize="Large" Grid.Column="0" HorizontalOptions="End"></Label>
+                <Editor x:Name="urladdress" Text="http://47.96.26.86:20003/" Placeholder="请输入url" HorizontalOptions="Fill"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"></Editor>
+                <Button Text="设置" x:Name="SetUrl" Clicked="SetUrl_Clicked"  Grid.Row="1" Grid.Column="1"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

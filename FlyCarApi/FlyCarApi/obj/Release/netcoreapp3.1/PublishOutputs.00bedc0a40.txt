@@ -1,0 +1,14 @@
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\FlyCarApi.exe
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\FlyCarApi.dll
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\FlyCarApi.deps.json
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\FlyCarApi.runtimeconfig.json
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\FlyCarApi.pdb
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\System.Data.SqlClient.dll
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-arm64\native\sni.dll
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x64\native\sni.dll
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x86\native\sni.dll
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\DataResult\FlyCarApp\FlyCarApi\FlyCarApi\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
