@@ -15,6 +15,7 @@
                 <local:SelectPage/>
             </x:Arguments>
         </NavigationPage>
+        <local:CarBook Title="预约" IconImageSource="Image/book.png"/>
         <NavigationPage Title="我的" IconImageSource="Image/userlogin.png" x:Name="mine">
             <x:Arguments>
                 <local:Login/>

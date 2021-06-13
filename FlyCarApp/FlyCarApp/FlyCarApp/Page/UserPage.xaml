@@ -37,10 +37,10 @@
                 <Label Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center"
                     x:Name="phone" Text="" FontSize="Large" TextColor="Black" FontAttributes="Bold"></Label>
                 <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="6" 
-                    ImageSource="Iamge/recharge.png" BackgroundColor="ForestGreen" BorderColor="White" BorderWidth="3"
+                    ImageSource="Iamge/recharge.png" BackgroundColor="ForestGreen"
                     x:Name="recharge" Text="用户充值" FontSize="Large" FontAttributes="Bold" TextColor="White" Clicked="recharge_ClickedAsync"></Button>
                 <Button Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="6"  
-                    ImageSource="Iamge/change.png" BackgroundColor="OrangeRed" BorderColor="White" BorderWidth="3"
+                    ImageSource="Iamge/change.png" BackgroundColor="OrangeRed"
                     x:Name="change" Text="注销用户" FontSize="Large" FontAttributes="Bold" TextColor="White" Clicked="change_ClickedAsync"></Button>
             </Grid>
         </StackLayout>

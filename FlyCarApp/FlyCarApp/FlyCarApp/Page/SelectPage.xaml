@@ -26,11 +26,11 @@
                 <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" VerticalOptions="Center" HorizontalOptions="Center"
                        Text="请选择需要查询的项目" TextColor="Honeydew" FontSize="Title" FontAttributes="Bold"></Label>
                 <Button Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
-                       x:Name="amount" Clicked="amount_Clicked" Text="用户余额查询" FontSize="Title" FontAttributes="Bold" TextColor="Honeydew" BackgroundColor="LightSeaGreen" CornerRadius="30" BorderColor="Honeydew" BorderWidth="3"></Button>
+                       x:Name="amount" Clicked="amount_Clicked" Text="用户余额查询" FontSize="Title" FontAttributes="Bold" TextColor="Honeydew" BackgroundColor="LightSeaGreen" CornerRadius="30"></Button>
                 <Button Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
-                       x:Name="car" Clicked="car_ClickedAsync" Text="飞的查询" FontSize="Title" FontAttributes="Bold" TextColor="Honeydew" BackgroundColor="LightSeaGreen" CornerRadius="30" BorderColor="Honeydew" BorderWidth="3"></Button>
+                       x:Name="car" Clicked="car_ClickedAsync" Text="飞的查询" FontSize="Title" FontAttributes="Bold" TextColor="Honeydew" BackgroundColor="LightSeaGreen" CornerRadius="30"></Button>
                 <Button Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
-                       x:Name="check" Clicked="check_ClickedAsync"  Text="飞的到达确认" FontSize="Title" FontAttributes="Bold" TextColor="Honeydew" BackgroundColor="LightSeaGreen" CornerRadius="30" BorderColor="Honeydew" BorderWidth="3"></Button>
+                       x:Name="check" Clicked="check_ClickedAsync"  Text="飞的到达确认" FontSize="Title" FontAttributes="Bold" TextColor="Honeydew" BackgroundColor="LightSeaGreen" CornerRadius="30"></Button>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

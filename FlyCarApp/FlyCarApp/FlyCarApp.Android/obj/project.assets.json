@@ -2188,11 +2188,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DataResult\\FlyCar\\FlyCarApp\\FlyCarApp\\FlyCarApp.Android\\FlyCarApp.Android.csproj",
+      "projectUniqueName": "D:\\DataResult\\FlyCarApp\\FlyCarApp\\FlyCarApp\\FlyCarApp.Android\\FlyCarApp.Android.csproj",
       "projectName": "FlyCarApp.Android",
-      "projectPath": "D:\\DataResult\\FlyCar\\FlyCarApp\\FlyCarApp\\FlyCarApp.Android\\FlyCarApp.Android.csproj",
+      "projectPath": "D:\\DataResult\\FlyCarApp\\FlyCarApp\\FlyCarApp\\FlyCarApp.Android\\FlyCarApp.Android.csproj",
       "packagesPath": "C:\\Users\\24405\\.nuget\\packages\\",
-      "outputPath": "D:\\DataResult\\FlyCar\\FlyCarApp\\FlyCarApp\\FlyCarApp.Android\\obj\\",
+      "outputPath": "D:\\DataResult\\FlyCarApp\\FlyCarApp\\FlyCarApp\\FlyCarApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2215,8 +2215,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\DataResult\\FlyCar\\FlyCarApp\\FlyCarApp\\FlyCarApp\\FlyCarApp.csproj": {
-              "projectPath": "D:\\DataResult\\FlyCar\\FlyCarApp\\FlyCarApp\\FlyCarApp\\FlyCarApp.csproj"
+            "D:\\DataResult\\FlyCarApp\\FlyCarApp\\FlyCarApp\\FlyCarApp\\FlyCarApp.csproj": {
+              "projectPath": "D:\\DataResult\\FlyCarApp\\FlyCarApp\\FlyCarApp\\FlyCarApp\\FlyCarApp.csproj"
             }
           }
         }

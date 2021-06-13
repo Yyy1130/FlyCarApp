@@ -40,7 +40,7 @@
                 <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Text="用户名:" TextColor="Gold" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" 
                       FontSize="Large"></Label>
                 <Editor Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="4" x:Name="username" Placeholder="请输入用户名" VerticalOptions="CenterAndExpand" Text="" TextColor="Gold"></Editor>
-                <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="5" x:Name="Vip" Text="立即开通" BackgroundColor="Chocolate" TextColor="Goldenrod" BorderColor="Goldenrod" BorderWidth="5" FontSize="Large" Clicked="Vip_Clicked" CornerRadius="100"></Button>
+                <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="5" x:Name="Vip" Text="立即开通" BackgroundColor="Chocolate" TextColor="Goldenrod" FontSize="Large" Clicked="Vip_Clicked" CornerRadius="100"></Button>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

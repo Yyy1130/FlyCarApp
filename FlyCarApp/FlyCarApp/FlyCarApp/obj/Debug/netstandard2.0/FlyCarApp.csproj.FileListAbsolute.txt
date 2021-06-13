@@ -28,7 +28,6 @@ D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\X
 D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\FlyCarApp.dll
 D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\ref\FlyCarApp.dll
 D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\FlyCarApp.pdb
-D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\HomePage.xaml.g.cs
 D:\DataResult\FlyCar\FlyCarApp\FlyCarApp\FlyCarApp\bin\Debug\netstandard2.0\FlyCarApp.deps.json
 D:\DataResult\FlyCar\FlyCarApp\FlyCarApp\FlyCarApp\bin\Debug\netstandard2.0\FlyCarApp.dll
 D:\DataResult\FlyCar\FlyCarApp\FlyCarApp\FlyCarApp\bin\Debug\netstandard2.0\ref\FlyCarApp.dll
@@ -55,3 +54,14 @@ D:\DataResult\FlyCar\FlyCarApp\FlyCarApp\FlyCarApp\bin\Debug\netstandard2.0\BDma
 D:\DataResult\FlyCar\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\FlyCarApp.csproj.CopyComplete
 D:\DataResult\FlyCar\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\MainShow.xaml.g.cs
 D:\DataResult\FlyCar\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\UserPage.xaml.g.cs
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\bin\Debug\netstandard2.0\BDmap.dll
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\CarBook.xaml.g.cs
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\CarList.xaml.g.cs
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\CarParkMap.xaml.g.cs
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\MainShow.xaml.g.cs
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\Recharge.xaml.g.cs
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\Regist.xaml.g.cs
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\SelectPage.xaml.g.cs
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\UserPage.xaml.g.cs
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\Page\VipRight.xaml.g.cs
+D:\DataResult\FlyCarApp\FlyCarApp\FlyCarApp\FlyCarApp\obj\Debug\netstandard2.0\FlyCarApp.csproj.CopyComplete

@@ -72,7 +72,7 @@ namespace FlyCarApp.Page
                 _ = DisplayAlert("错误代码:" + result.code, result.msg, "确认");
                 return;
             }
-            _ = DisplayAlert("提示", result.msg, "确认");
+            _ = DisplayAlert("结算提示", "本次乘坐一共花费：" + user.useramount.ToString() + "元\n"+result.msg, "确认");
         }
     }
 }

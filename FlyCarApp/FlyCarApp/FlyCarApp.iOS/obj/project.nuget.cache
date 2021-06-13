@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "dgSpecHash": "2NFkm2oV8W7DqVVsyekxN0QeGDM7tIHQzz+t4R1DZs4dKDklq43+P+/bCHjtA/gPMlHEGd0jqOxO2B2wpeHqdQ==",
+  "success": true,
+  "projectFilePath": "D:\\DataResult\\FlyCarApp\\FlyCarApp\\FlyCarApp\\FlyCarApp.iOS\\FlyCarApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\24405\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\24405\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\24405\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "C:\\Users\\24405\\.nuget\\packages\\xamarin.forms.maps\\4.8.0.1821\\xamarin.forms.maps.4.8.0.1821.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "检测到包降级: Xamarin.Essentials 从 1.6.1 降级到 1.5.3.2。直接从项目引用包以选择不同版本。 \r\n FlyCarApp.iOS -> FlyCarApp -> Xamarin.Essentials (>= 1.6.1) \r\n FlyCarApp.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "检测到包降级: Xamarin.Forms 从 4.8.0.1821 降级到 4.8.0.1451。直接从项目引用包以选择不同版本。 \r\n FlyCarApp.iOS -> FlyCarApp -> Xamarin.Forms (>= 4.8.0.1821) \r\n FlyCarApp.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}

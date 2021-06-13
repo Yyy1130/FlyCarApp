@@ -20,9 +20,6 @@ namespace FlyCarApp.Page
         public CarBook()
         {
             InitializeComponent();
-            username.Text = RecentUser.username;
-            if(RecentCar.carno!=null)
-                carno.Text = RecentCar.carno;
             target.Title = "目的地";
             ResultInfo result = new ResultInfo();
             ClientFun client = new ClientFun("POST");
@@ -35,15 +32,34 @@ namespace FlyCarApp.Page
             }
             foreach(DataRow datarow in result.data.Rows)
             {
-                target.Items.Add(datarow["cpid"].ToString());
+                target.Items.Add(datarow["cpid"].ToString()+"."+ datarow["cpname"].ToString());
             }
+            carno.Title = "飞的号";
+            result = (ResultInfo)client.PostFun("CarGet", "{}");
+            if (result.code != "0")
+            {
+                var _show = DependencyService.Get<IMessageShow>();
+                _show.ShortAlert("错误代码:" + result.code + result.msg);
+                return;
+            }
+            foreach (DataRow datarow in result.data.Rows)
+            {
+                carno.Items.Add(datarow["carno"].ToString());
+            }
+            if (RecentCar.carno != null)
+                carno.SelectedItem = RecentCar.carno;
         }
 
         private async void Book_ClickedAsync(object sender, EventArgs e)
         {
-            if (username.Text == "" || carno.Text == "" || target.SelectedItem == null)
+            var _show = DependencyService.Get<IMessageShow>();
+            if (RecentUser.username==null)
             {
-                var _show = DependencyService.Get<IMessageShow>();
+                _show.ShortAlert("未登录");
+                return;
+            }
+            if (username.Text == "" || carno.SelectedItem == null || target.SelectedItem == null)
+            {
                 _show.ShortAlert("必填项为空");
                 return;
             }
@@ -58,8 +74,8 @@ namespace FlyCarApp.Page
             user.useramount = 0;
             user_Car.UserInfo = user;
             CarInfo car = new CarInfo();
-            car.carno= carno.Text;
-            car.targetid = int.Parse(target.SelectedItem.ToString());
+            car.carno= carno.SelectedItem.ToString();
+            car.targetid = int.Parse(target.SelectedItem.ToString().Substring(0,1));
             user_Car.CarInfo = car;
             ResultInfo result = new ResultInfo();
             ClientFun client = new ClientFun("POST");
@@ -69,11 +85,18 @@ namespace FlyCarApp.Page
                 _ = DisplayAlert("错误代码:" + result.code, result.msg, "确认");
                 return;
             }
-            _ = DisplayAlert("提示", result.msg, "确认");
+            RecentCar.carno = carno.SelectedItem.ToString();
+            _ = DisplayAlert("订单提示", "用户："+RecentUser.username+"\n飞的号："+ carno.SelectedItem.ToString() +"\n目的地："+ target.SelectedItem.ToString() + "\n"+ result.msg, "确认");
         }
 
         private async void Cancel_ClickedAsync(object sender, EventArgs e)
         {
+            var _show = DependencyService.Get<IMessageShow>();
+            if (RecentUser.username == null)
+            {
+                _show.ShortAlert("未登录");
+                return;
+            }
             bool jugdge = await DisplayAlert("提示", "是否要取消预约", "确认", "取消");
             if (!jugdge)
             {
@@ -91,6 +114,14 @@ namespace FlyCarApp.Page
                 return;
             }
             _ = DisplayAlert("提示", result.msg, "确认");
+        }
+
+        protected override void OnAppearing()
+        {
+            username.Text = RecentUser.username;
+            if (RecentCar.carno != null)
+                carno.SelectedItem = RecentCar.carno;
+            base.OnAppearing();
         }
     }
 }

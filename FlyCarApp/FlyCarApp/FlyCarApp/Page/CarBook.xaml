@@ -24,21 +24,23 @@
                 </Grid.RowDefinitions>
                 <Label Text="预约费统统免费" FontSize="Large" TextColor="White"
                        Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"  HorizontalOptions="Center"></Label>
-                <Label Text="车牌号:" FontSize="Large" TextColor="White"
+                <Label Text="飞的号:" FontSize="Large" TextColor="White"
                        Grid.Row="2" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center"></Label>
-                <Editor x:Name="carno" Text="" FontSize="Default" TextColor="White"
-                        Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" VerticalOptions="Center"></Editor>
+                <Picker x:Name="carno" TextColor="White"
+                        Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" VerticalOptions="Center">
+                </Picker>
                 <Label Text="用户名:" FontSize="Large" TextColor="White"
                        Grid.Row="3" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center"></Label>
                 <Editor x:Name="username" Text="" FontSize="Default" TextColor="White"
                         Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" VerticalOptions="Center"></Editor>
                 <Label Text="目的地编号:" FontSize="Large" TextColor="White"
                        Grid.Row="4" Grid.Column="0" HorizontalOptions="End" Grid.ColumnSpan="2" VerticalOptions="Center"></Label>
-                <Picker x:Name="target" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" VerticalOptions="Center" TextColor="White">
+                <Picker x:Name="target"
+                        Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" VerticalOptions="Center" TextColor="White">
                 </Picker>
-                <Button Text="预约飞的" FontSize="Default" TextColor="White" CornerRadius="15" BorderColor="White" BorderWidth="2" BackgroundColor="ForestGreen"
+                <Button Text="预约飞的" FontSize="Default" TextColor="White" CornerRadius="15" BackgroundColor="ForestGreen"
                         Grid.Row="5" Grid.Column="3" Clicked="Book_ClickedAsync"></Button>
-                <Button Text="取消预约" FontSize="Default" TextColor="White" CornerRadius="15" BorderColor="White" BorderWidth="2" BackgroundColor="ForestGreen"
+                <Button Text="取消预约" FontSize="Default" TextColor="White" CornerRadius="15" BackgroundColor="ForestGreen"
                         Grid.Row="5" Grid.Column="2" Clicked="Cancel_ClickedAsync"></Button>
             </Grid>
         </StackLayout>

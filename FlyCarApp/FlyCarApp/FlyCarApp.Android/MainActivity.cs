@@ -57,7 +57,6 @@ namespace FlyCarApp.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
-
         }
 
         protected override void OnStart()//开始
@@ -122,6 +121,7 @@ namespace FlyCarApp.Droid
 
             compassTest.Start();
         }
+
         private void ConvertBaiduLatLng(Location location)//坐标转换函数方法
         {
             CurrentLocation = location;
@@ -141,6 +141,9 @@ namespace FlyCarApp.Droid
                 return;
             compassTest.Stop();
             ConvertBaiduLatLng(location);
+            //显示数据
+            //Toast.MakeText(this, CurrentLocation.Latitude.ToString() + "----" + CurrentLocation.Longitude.ToString(), ToastLength.Long).Show();
+
             MapStatus mMapStatus = MapClass.mBaiduMap.MapStatus;
             //使地图移动到当前位置
             mMapStatus = new MapStatus.Builder()
@@ -150,7 +153,7 @@ namespace FlyCarApp.Droid
             MapStatusUpdate mMapStatusUpdate = MapStatusUpdateFactory.NewMapStatus(mMapStatus);
             //改变地图状态  
             MapClass.mBaiduMap.SetMapStatus(mMapStatusUpdate);
-            //RefreshMap();
+            RefreshMap();
             compassTest.Start();
         }
         public static void RefreshMap()

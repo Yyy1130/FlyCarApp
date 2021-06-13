@@ -4,7 +4,7 @@
              x:Class="FlyCarApp.Page.CarList" NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
-            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="SaddleBrown" HeightRequest="70">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Green" HeightRequest="70">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
@@ -38,7 +38,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button x:Name="book" Text="预约飞的" Clicked="book_ClickedAsync" FontSize="Large" FontAttributes="Bold"
+            <Button x:Name="book" Text="预约飞的" TextColor="DarkGreen" BackgroundColor="LightGreen" Clicked="book_ClickedAsync" FontSize="Large" FontAttributes="Bold"
                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="80"></Button>
         </StackLayout>
     </ContentPage.Content>
